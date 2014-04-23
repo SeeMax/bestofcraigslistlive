@@ -1,0 +1,40 @@
+@import "variables.css.scss" , "mixins.css.scss";
+
+html{
+
+}
+
+body {
+  background:white;
+}
+
+.item_listing {
+}
+
+.item, .double {
+  height:150px;
+  background:url(<%= asset_path 'subtle_dots_purp.png' %>);
+}
+
+.header {
+  text-align:center;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  h1 {
+    font-size:40px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 959px) {
+  h1 {
+    font-size:70px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  h1 {
+    font-size:100px;
+  }
+}
