@@ -42,12 +42,11 @@
 
     ----------------------------------------------------------------------------- */
 
-	@media screen and (min-width: 0px) and (max-width: 479px) {
+    @media screen and (min-width: 0px) and (max-width: 479px) {
 
         .col {
             margin-left:2%;
             padding:0 1.5%;
-            margin-top:2%;
         }
 
         /* --- Gridpak variables ---*/
@@ -72,7 +71,7 @@
         }
 
         */
-        .span_1, .item_listing .item, .double {
+        .span_1, .full, .double, .triple, .quad {
             @include span_first;
             width:100%;
         }
@@ -86,12 +85,11 @@
 
     ----------------------------------------------------------------------------- */
 
-	@media screen and (min-width: 480px) and (max-width: 959px) {
+    @media screen and (min-width: 480px) and (max-width: 959px) {
 
         .col {
             margin-left:2%;
             padding:0 1.5%;
-            margin-top:2%;
         }
 
         /* --- Gridpak variables ---*/
@@ -107,15 +105,15 @@
         }
 
 
-        .span_1, .item{
+        .span_1, .double, .triple, .quad{
             @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .span_2, .double {
+        .span_2, .full {
             @include span_first;
             width:100%;
         }
 
-        .second {
+        .for_break {
             @include span_first;
         }
     }
@@ -123,26 +121,25 @@
     /* 3. 4 Column Grid 960px - Infinity
     -----------------------------------------------------------------------------
 
-    Span 1:    24.25%
-    Span 2:    49.5%
-    Span 3:    74.75%
+    Span 1:    23.5%
+    Span 2:    49.0%
+    Span 3:    74.5%
     Span 4:    100%
 
     ----------------------------------------------------------------------------- */
 
-	@media screen and (min-width: 960px) {
+    @media screen and (min-width: 960px) {
 
         .col {
-            margin-left:1%;
-            padding:0 0.75%;
-            margin-top:1%;
+            margin-left:2%;
+            padding:0 1.5%;
         }
 
         /* --- Gridpak variables ---*/
         $max_columns: 4;
-        $padding: 0 0.75%;
+        $padding: 0 1.5%;
         $gutter_px: 0;
-        $gutter_pc: 1%;
+        $gutter_pc: 2%;
 
 
 
@@ -151,16 +148,16 @@
         }
 
 
-        .span_1, .item_listing .item {
+        .span_1, .quad {
             @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
         .span_2, .double {
             @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .span_3 {
+        .span_3, .triple {
             @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
         }
-        .span_4 {
+        .span_4, .full {
             @include span_first;
             width:100%;
         }
