@@ -11,8 +11,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="nav">
+    <ul>
+      <li><a href="/">THIS IS</a></li>
+      <li><a href="/"> WHERE NAV</a></li>
+      <li><a href="/"> WILL GO</a></li>
+    </ul>
+  </div>
+  <div class="logo">
+    <img src=<%= asset_path 'Logo_600.png' %> >
+  </div>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>

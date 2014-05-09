@@ -2,11 +2,11 @@ var currentHeight = 0;
 var globalResizeTimer = null;
 
 $(window).load(function headerHeight() {
-  currentHeight = $('.header').outerHeight();
+  currentHeight = $('.logo').outerHeight();
   windowHeight = $(window).height();
 
     $(".content").css({
-        'top': currentHeight - 8 +"px",
+        'top': currentHeight - 1 +"px",
         'min-height': windowHeight - currentHeight + "px"
     });
 
