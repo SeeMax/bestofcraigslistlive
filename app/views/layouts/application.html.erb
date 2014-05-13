@@ -13,9 +13,7 @@
 <body>
   <div class="nav">
     <ul>
-      <li><a href="/">THIS IS</a></li>
-      <li><a href="/"> WHERE NAV</a></li>
-      <li><a href="/"> WILL GO</a></li>
+      <li><div class="border"><a href="/">HOME</a></div></li><li><div class="border"><a href="/about"> ABOUT</a></div></li><li><div class="border"><a href="/schedule">SCHEDULE</a></div></li><li><div class="border"><a href="/videos"> VIDEOS</a></div></li>
     </ul>
   </div>
   <div class="logo">
@@ -24,5 +22,27 @@
 
   <%= yield %>
 
+    <div class="footer">
+      <div class="contact_header">
+        <h3>CONTACT</h3>
+      </div>
+
+      <div class="row contact_box">
+        <div class="col double for_break contact">
+          John Pick<br>
+          Director/Producer<br>
+          <a href="tel:1-773 934 5317">773 934 5317</a><br>
+          <a href="mailto:jpick02@yahoo.com?Subject=Best%20of%20Craigslist">jpick02@yahoo.com</a><br>
+        </div><div
+        class="col double contact">
+          Tiffany Schloesser<br>
+          Agency for the Performing Arts<br>
+          <a href="tel:1-212-205-4331">212-205-4331</a><br>
+          <a href="mailto:tschloesser@apanewyork.com?Subject=Best%20of%20Craigslist">tschloesser@apanewyork.com</a><br>
+        </div>
+        <div style="clear:both"></div>
+      </div>
+    </div><!-- content -->
+  </div>
 </body>
 </html>
