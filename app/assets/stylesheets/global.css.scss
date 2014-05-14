@@ -115,7 +115,7 @@ h3 {
   img {
     width:50%;
     max-width:400px;
-    min-width:325px;
+    min-width:300px;
   }
 }
 
@@ -224,12 +224,16 @@ h3 {
 
 @media screen and (min-width: 0px) and (max-width: 479px) {
 
+  body {
+    font-size:16px;
+  }
+
   .live_header, .video_header {
     width:100%;
   }
 
   h1 {
-    font-size:55px;
+    font-size:50px;
   }
 
   h2 {
