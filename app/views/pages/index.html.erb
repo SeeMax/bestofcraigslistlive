@@ -7,7 +7,7 @@
       <p>
         The best on-line posts performed live on-stage.
       </p>
-      <a data-scroll href="#live_shows">
+      <a data-scroll href="#upcoming_shows">
         <div class="button">
           Get Tickets
         </div>
@@ -22,7 +22,7 @@
       <p>
         Watch the highly praised Funny or Die videos.
       </p>
-      <a data-scroll href="#videos">
+      <a data-scroll href="#video">
        <div class="button">
          Watch Videos
         </div>
@@ -30,48 +30,101 @@
     </div>
     <img src=<%= asset_path 'video_cover.jpg' %> >
   </div>
-
-  <div class="rowbox">
-    <div class="row" id="live_shows">
-        <div class="col quad">
-            <p>This is my item, there are many others like it but this one is mine.</p>
+  <div class="description">
+    <hr>
+    <div class="type">
+      <h3>AN IRL PERFORMANCE OF YOUR VIRTUAL MESSAGE BOARD.</h3>The Best of Craiglist brings Craigslist posts to life. Taken word-for word, the posts are performed in live shows and a corresponding video series, brought to you by Actor / Writer / Creator John Pick.
+    </div>
+    <hr>
+  </div> <!-- // .row -->
+  <div style="clear:both"></div>
+  <div class="quote_box">
+    <img src=<%= asset_path 'live_quote.jpg' %> >
+  </div>
+  <div class="upcoming" id="upcoming_shows">
+    <div class="schedule">
+      <h1>UPCOMING SHOWS</h1>
+      <div class="venue">
+        <h2>HUDSON BACKSTAGE</h2>
+        <h3>HOME OF COMEDY CENTRAL STAGE <div class="address">6539 Santa Monica Blvd</span></h3>
+        <div class="dates">
+          <div class="showtime">
+            05/23 Friday 8:00pm | MUSICAL GUEST: Doran
+          </div>
+          <a href="https://www.plays411.net/newsite/boxoffice/cart.asp?show_id=3859" target="_blank">
+            <div class="sched_button">
+              GET TICKETS
+            </div>
+          </a>
+          <div style="clear:both"></div>
+          <hr>
+          <div class="showtime">
+            05/25 Sunday 8:00pm | MUSICAL GUEST: Doran
+          </div>
+          <a href="https://www.plays411.net/newsite/boxoffice/cart.asp?show_id=3859" target="_blank">
+            <div class="sched_button">
+              GET TICKETS
+            </div>
+          </a>
+          <div style="clear:both"></div>
+          <hr>
+          <div class="showtime">
+            05/30 Friday 8:00pm | MUSICAL GUEST: Dustbowl Revival
+          </div>
+          <a href="https://www.plays411.net/newsite/boxoffice/cart.asp?show_id=3859" target="_blank">
+            <div class="sched_button">
+              GET TICKETS
+            </div>
+          </a>
+          <div style="clear:both"></div>
+          <hr>
+          <div class="showtime">
+            06/01 Sunday 8:00pm | MUSICAL GUEST: Dustbowl Revival
+          </div>
+          <a href="https://www.plays411.net/newsite/boxoffice/cart.asp?show_id=3859" target="_blank">
+            <div class="sched_button">
+              GET TICKETS
+            </div>
+          </a>
+          <div style="clear:both"></div>
+          <hr>
+          <div class="showtime">
+            06/06 Friday 8:00pm | MUSICAL GUEST: Levi Petree and Radio Publica
+          </div>
+          <a href="https://www.plays411.net/newsite/boxoffice/cart.asp?show_id=3859" target="_blank">
+            <div class="sched_button">
+              GET TICKETS
+            </div>
+          </a>
+          <div style="clear:both"></div>
+          <hr>
+          <div class="showtime">
+            06/08 Sunday 8:00pm | MUSICAL GUEST: Levi Petree and Radio Publica
+          </div>
+          <a href="https://www.plays411.net/newsite/boxoffice/cart.asp?show_id=3859" target="_blank">
+            <div class="sched_button">
+              GET TICKETS
+            </div>
+          </a>
+          <div style="clear:both"></div>
+          <hr>
         </div>
-        <div class="col quad ">
-            <p>double double double double This is my item, there are many others like it but this one is mine. This is my item, there are many others like it but this one is mine. This is my item, there are many others like it but this one is mine.</p>
+        <div class="notes">
+          Valet Parking available
         </div>
-        <div class="col quad for_break">
-            <p>This is my item, there are many others like it but this one is mine.</p>
-        </div>
-        <div class="col quad">
-            <p>This is my item, there are many others like it but this one is mine.</p>
-        </div>
-    </div> <!-- // .row -->
-    <div style="clear:both"></div>
+      </div>
+      <div style="clear:both"></div>
+    </div>
   </div>
   <div class="quote_box">
-    <div class="quote">
-      <h2>
-        "Absurdly hilarious...expertly edited"
-        <div class="attributed">-LA Weekly</div>
-      </h2>
-    </div>
-    <img src=<%= asset_path 'yellow_character_1.jpg' %> >
+    <img src=<%= asset_path 'video_quote.jpg' %> >
   </div>
-  <div class="rowbox">
-     <div class="row" id="videos">
-        <div class="col quad">
-            <p>This is my item, there are many others like it but this one is mine.</p>
-        </div>
-        <div class="col quad ">
-            <p>double double double double This is my item, there are many others like it but this one is mine. This is my item, there are many others like it but this one is mine. This is my item, there are many others like it but this one is mine.</p>
-        </div>
-        <div class="col quad for_break">
-            <p>This is my item, there are many others like it but this one is mine.</p>
-        </div>
-        <div class="col quad">
-            <p>This is my item, there are many others like it but this one is mine.</p>
-        </div>
-    </div> <!-- // .row -->
-  <div style="clear:both"></div>
+  <div class="video_sample" id="video">
+    <a class="fod_video" rel="home_vids" href="http://www.funnyordie.com/embed/e33f02ee6b"><img src=<%= asset_path 'bocl_fb_icon.png' %> ></a>
+    <a class="fod_video" data-fancybox-type="iframe" rel="home_vids" href="http://www.funnyordie.com/embed/e33f02ee6b"><img src=<%= asset_path 'bocl_fb_icon.png' %> ></a>
+    <a href="http://www.funnyordie.com/search/a/videos?search_term=the+best+of+craigslist+vol" title="on Funny or Die">
+      See The Whole Series
+    </a>
   </div>
+
 <!-- </div> for footer in application.html -->

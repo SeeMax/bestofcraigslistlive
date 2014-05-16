@@ -5,7 +5,8 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Bestofcraigslist</title>
+  <title>The Best of Craigslist Live</title>
+  <%= favicon_link_tag 'bocl_fav.png' %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -13,8 +14,9 @@
 <body>
   <div class="nav">
     <ul>
-      <li><div class="border"><a href="/">HOME</a></div></li><li><div class="border"><a href="/about"> ABOUT</a></div></li><li><div class="border"><a href="/schedule">SCHEDULE</a></div></li><li><div class="border"><a href="/videos"> VIDEOS</a></div></li>
+      <a href="/"><li><div class="border">HOME</div></li></a><a href="/about"><li><div class="border">ABOUT</div></li></a><a href="/schedule"><li><div class="border">SCHEDULE</div></li></a><a href="/videos"><li><div class="border">VIDEOS</div></li></a>
     </ul>
+
   </div>
   <div class="logo">
     <img src=<%= asset_path 'Logo_600.png' %> >
@@ -41,6 +43,9 @@
           <a href="mailto:tschloesser@apanewyork.com?Subject=Best%20of%20Craigslist">tschloesser@apanewyork.com</a><br>
         </div>
         <div style="clear:both"></div>
+        <div class="fb_icon">
+          <a href="http://www.facebook.com/pages/The-Best-of-Craigslist/556564161036696" target="_blank"><img src=<%= asset_path 'bocl_fb_icon.png' %> >FIND US ON FACEBOOK.</a>
+        </div>
       </div>
     </div><!-- content -->
   </div>

@@ -13,7 +13,7 @@ body {
   font-family: 'open_sanscondensed_light', Sans-Serif;
   font-size:18px;
   -webkit-font-smoothing: antialiased;
-  letter-spacing:2px;
+  letter-spacing:1px;
   color:white;
   width:100%;
   height: 100%;
@@ -29,7 +29,7 @@ a {
   height:auto;
 }
 
-.rowbox {
+.row {
   width:90%;
   margin:0 auto;
 
@@ -37,10 +37,12 @@ a {
 
 .content {
   width:100%;
+  min-height:100%;
   position:relative;
+  background:white;
+  color:$darkBlue;
   @include transition;
   z-index:2;
-  border-top:1px $mediumBlue solid;
 }
 
 h1 {
@@ -50,19 +52,41 @@ h1 {
 
 h2 {
   font-family: 'ralewayheavy', Sans-Serif;
-  font-size:40px;
-  letter-spacing:4px;
+  letter-spacing:2px;
 }
 
 h3 {
   font-family: 'open_sanscondensed_light', Sans-Serif;
-  font-size:40px;
   letter-spacing:4px;
 }
 
 .col {
    height:auto;
    padding:2%;
+   color:$darkBlue;
+
+   img {
+    width:100%;
+    height:auto;
+   }
+}
+
+hr {
+  border:0;
+  background:$lightGold;
+  height:1px;
+  width:88%;
+  margin:0px auto;
+}
+
+.fb_icon {
+  z-index:105;
+  margin:2% 0 2% 2%;
+
+  img {
+    margin-right:10px;
+    vertical-align: bottom;
+  }
 }
 
 /* =================================== */
@@ -98,7 +122,6 @@ h3 {
   }
 }
 
-
 /* =================================== */
 /* Home */
 
@@ -107,14 +130,14 @@ h3 {
   text-align:center;
   width:100%;
   height:auto;
-  padding:85px 0 50px 0;
+  padding:115px 0 70px 0;
   position:fixed;
   z-index:1;
   top:0;
 
   img {
     width:50%;
-    max-width:400px;
+    max-width:450px;
     min-width:270px;
   }
 }
@@ -144,6 +167,7 @@ h3 {
 }
 
 .button {
+  font-family: 'open_sansregular', Sans-Serif;
   font-size: 24px;
   opacity:.8;
   border:2px white solid;
@@ -180,10 +204,147 @@ h3 {
   left:0;
   right:0;
   padding:0 10%;
+  color:white;
 
   .attributed {
     text-align:left;
   }
+}
+
+.description {
+  text-align:center;
+  width:80%;
+  margin: 10% auto;
+  color:$lightBlue;
+
+  hr {
+    width:100%;
+  }
+
+  h3 {
+    color:$lightBlue;
+    padding-bottom:10px;
+  }
+
+  .type {
+    padding:40px;
+  }
+}
+
+.upcoming {
+  width:96%;
+  margin:5% auto 0 auto;
+
+  h1 {
+    color:$mediumBlue;
+  }
+
+  h2 {
+
+  }
+}
+
+.video_sample {
+
+}
+
+.video_title {
+  color:$darkBlue;
+}
+
+
+/* =================================== */
+/* About */
+
+.about {
+  font-family: 'open_sanslight', Sans-Serif;
+  padding-top: 30px;
+
+  h1 {
+    color:$mediumBlue;
+    padding-top:2%;
+  }
+
+  .headline {
+    padding-bottom:0;
+  }
+
+  .about_quote {
+    font-size:60px;
+    color:$darkBlue;
+    font-family: 'open_sanscondensed_light', Sans-Serif;
+  }
+
+  .about_attribution {
+    color:$lightGold;
+    padding:1% 0 3% 1%;
+    font-size:20px;
+  }
+}
+
+.press {
+
+  h3 {
+    display:inline-block;
+  }
+
+  a {
+    color:$mediumBlue;
+  }
+}
+
+.cast_members {
+  color:$mediumBlue;
+  margin-top:1%;
+  margin-bottom:5%;
+}
+
+/* =================================== */
+/* Schedule */
+
+.schedule {
+  width:90%;
+  padding:2%;
+  margin:0 auto;
+
+  hr {
+    width:100%;
+    margin:5px 0 20px 0;
+  }
+
+  .address {
+    color:$darkGold;
+  }
+
+  .dates {
+    margin-top:2%;
+  }
+}
+
+.venue {
+  margin:4% 0 7% 0;
+}
+
+.show {
+  width:100%;
+}
+
+.showtime {
+  display:inline-block;
+  vertical-align: bottom;
+  padding-top:6px;
+}
+
+.sched_button {
+  float:right;
+  border:1px $darkBlue solid;
+  color: $darkBlue;
+  padding: 3px 5px;
+  @include transition;
+}
+
+.sched_button:hover {
+  border:1px $lightGold solid;
 }
 
 /* =================================== */
@@ -191,8 +352,13 @@ h3 {
 
 .footer {
   background:$mediumBlue;
+  color:white;
   height:auto;
   padding: 30px 0 50px 0;
+
+  .col {
+    color:white;
+  }
 }
 
 .contact_header {
@@ -236,8 +402,9 @@ h3 {
     font-size:48px;
   }
 
-  h2 {
+  h2, h3 {
     font-size:20px;
+    line-height:24px;
   }
 
   .button {
@@ -246,6 +413,26 @@ h3 {
     padding:8px 3px;
     width:50%;
     max-width:350px;
+  }
+
+  .about {
+
+    .about_quote {
+      font-size:40px;
+    }
+
+    .about_attribution {
+      font-size:10px;
+    }
+  }
+
+  .sched_button {
+    float:left;
+  }
+
+  .showtime {
+    margin-bottom:8px;
+    width:100%;
   }
 }
 
@@ -262,7 +449,33 @@ h3 {
   h1 {
     font-size:74px;
   }
+
+  h2, h3 {
+    font-size:32px;
+    line-height:36px;
+  }
+
+  .about {
+
+    .about_quote {
+      font-size:50px;
+    }
+
+    .about_attribution {
+      font-size:15px;
+    }
+  }
+
+  .sched_button {
+    float:left;
+  }
+
+  .showtime {
+    margin-bottom:8px;
+    width:100%;
+  }
 }
+
 
 /* =================================== */
 /* Responsive 770px - 959px */
@@ -273,6 +486,11 @@ h3 {
   h1 {
     font-size:58px;
   }
+
+  h2, h3 {
+    font-size:25px;
+    line-height:29px;
+  }
 }
 
 /* =================================== */
@@ -281,11 +499,16 @@ h3 {
 
 @media screen and (min-width: 960px) and (max-width: 1349px){
   body {
-    font-size:24px;
+    font-size:22px;
   }
 
   h1 {
     font-size:70px;
+  }
+
+  h2, h3 {
+    font-size:30px;
+    line-height:34px;
   }
 
   .button {
@@ -299,11 +522,16 @@ h3 {
 
 @media screen and (min-width: 1350px) {
   body {
-    font-size:28px;
+    font-size:24px;
   }
 
   h1 {
     font-size:100px;
+  }
+
+  h2, h3 {
+    font-size:40px;
+    line-height:44px;
   }
 
   .button {
