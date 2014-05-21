@@ -3,6 +3,6 @@ $( document ).ready(function() {
         speed: 1000,
         easing: 'easeInOutCubic',
         updateURL: true,
-        offset: 65
+        offset: 115
     });
 });
